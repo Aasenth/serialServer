@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>workMode</class>
+ <widget class="QWidget" name="workMode">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>788</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="2" colspan="2">
+    <widget class="QPushButton" name="wmSearchBtn">
+     <property name="text">
+      <string>搜索</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="wmAddBtn">
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="wmDelBtn">
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="wmSubBtn">
+       <property name="text">
+        <string>提交</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="wmReverseBtn">
+       <property name="text">
+        <string>撤销</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="wmEdit"/>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QComboBox" name="wmSortCombox">
+       <item>
+        <property name="text">
+         <string>按连接数：</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按空闲时间：</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="upSort">
+       <property name="text">
+        <string>升序排列</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="downSort">
+       <property name="text">
+        <string>降序排列</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <widget class="QComboBox" name="wmSelectComBox">
+     <item>
+      <property name="text">
+       <string>按主机查询：</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>按串口查询：</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QTableView" name="tableView"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
